@@ -1,0 +1,311 @@
+:root{
+    --color-1:#1CD1B0;
+    --color-2:#00669F;
+    --color-3:#001D2D;
+    --color-4:#FFFFFF;
+    --color-5:#F3F3F3;
+}
+
+body{
+    position: relative;
+    font-size: 16px;
+    min-height:100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    list-style:none;
+    border:none;
+}
+
+button{
+    background-color: var(--color-2);
+    color:var(--color-4);
+    border:none;
+    padding: 15px 37px;
+    transition: all .5s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--color-3);
+}
+
+.discount{
+    max-width: 100%;
+    background-color: var(--color-1);
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.store-name{
+    background-color: var(--color-2);
+    color:var( --color-4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+.store-name a{
+    display: flex;
+    color:var(--color-4);
+    justify-content: center;
+    align-items: center;
+    margin: 7px 25px 7px 10px;
+}
+
+.nav-list{
+    padding: 10px;
+    background-color: var(--color-3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-list nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list nav ul li a{
+    color:var(--color-4);
+    margin-right: 10px;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Index Main */
+.plus{
+    position: absolute;
+    border-radius: 50%;
+    max-width: 82px;
+    width: 100%;
+    height: 82px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right:2.5%;
+}
+
+.card-container{
+    max-width: 70%;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+.card{
+    max-width: 25%;
+    width: 100%;
+    background-color: var(--color-5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.like{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.card-content{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .card-background{
+    position: relative;
+    width: 100%;
+}
+
+.card-container .card-profile{
+    position: absolute;
+    border-radius: 50%;
+    width: 40%;
+    bottom: 50%;
+    left: 30%;
+}
+
+.card-container .card-info{
+    padding: 80px 16px 18.5px 16px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .card-info h2{
+    padding-bottom: 10px;
+}
+
+.card-container .card-info p{
+    padding-bottom: 37px;
+}
+
+/* Form Main */
+.formulary{
+    max-width: 70%;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+form{
+    max-width: 100%;
+    width: 100%;
+    color:var(--color-4);
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--color-2);
+    padding: 18px 123px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 24px;
+}
+
+form h2{
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+form button{
+    background-color: var(--color-1);
+    color: var(--color-3);
+    font-weight: 500;
+    font-size: 2.5rem;
+    border-radius: 25px;
+    padding: 1.5% 11.6%;
+}
+
+.form-row{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+.form-row:first-of-type{
+    margin-top: 20px;
+}
+
+fieldset, .form-column{
+    max-width: 45%;
+    width: 100%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form-column fieldset{
+    max-width: 100%;
+}
+
+form button:hover{
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+
+hr{
+    margin: 21px 0;
+}
+
+label{
+    margin-bottom: 15px;
+}
+
+input, textarea, select{
+    padding: 24px 13px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+}
+
+input[type='file']{
+    padding: 24px 0;
+    border: none;
+    border-radius: 0;
+}
+
+input[type="file" i]::-webkit-file-upload-button{
+    background: #CECECE;
+    border-radius: 5px;
+    padding: 8px;
+    border:none;
+    width: 60%;
+    text-align: left;
+}
+
+input:not([type="range"]):not([type="color"])#file{
+    color:transparent;
+}
+
+input:not([type="range"]):not([type="color"])#file::after{
+    content:'No se eligió archivo';
+    font-size: 0.625rem;
+    color:var(--color-3);
+    text-align: left;
+}
+
+fieldset div input[type="checkbox"], fieldset div input[type="radio"]{
+    margin-right: 20px;
+}
+
+fieldset div{
+    margin-bottom: 18px;
+}
+
+fieldset div:last-of-type{
+    margin-bottom: 0;
+}
+
+textarea{
+    height: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 21px 0;
+    width: 100%;
+    background-color: var(--color-2);
+    color:var( --color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

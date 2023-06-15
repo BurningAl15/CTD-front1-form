@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <section class="discount">
+            <p>
+                20% de descuento en todos los productos!
+            </p>
+        </section>
+
+        <section class="store-name">
+            <a href="index.html">
+                <img src="./assets/store-icon.png" alt="Store Icon" />
+                <p>
+                    Nombre Tienda
+                </p>
+            </a>
+        </section>
+
+        <section class="nav-list">
+            <nav>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registrarme.html">Registrarme</a></li>
+                    <li><a href="ingresar.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="formulary">
+            <form>
+                <h2>Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                <div class="form-row">
+                    <fieldset>
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required />
+                    </fieldset>
+                    <fieldset>
+                        <label for="especie">Especie</label>
+                        <select>
+                            <option>Unknown</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class="form-row">
+                    <fieldset>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="file">Agregar Foto</label>
+                        <input type="file" id="file" name="file" />
+                    </fieldset>
+                </div>
+
+                <div class="form-row">
+                    <fieldset>
+                        <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
+                    </fieldset>
+                    <div class="form-column">
+                        <fieldset>
+                            <label for="poderes">Poderes</label>
+                            <div>
+                                <input type="checkbox" id="nombre" name="nombre" />
+                                <label for="personaje">Volar</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="nombre" name="nombre" />
+                                <label for="personaje">SuperInteligencia</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="nombre" name="nombre" />
+                                <label for="personaje">Vista de rayo láser</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="nombre" name="nombre" />
+                                <label for="personaje">Billetera gorda</label>
+                            </div>
+                        </fieldset>
+                        <hr />
+                        <fieldset>
+                            <label for="personaje">Tipo de personaje</label>
+                            <div>
+                                <input type="radio" id="nombre" name="nombre" />
+                                <label for="personaje">Héroe / Heroina</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="nombre" name="nombre" />
+                                <label for="personaje">Villano / Villana</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+                <button type="submit">Añadir</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Todos los derechos reservados a FRONT END 1
+    </footer>
+</body>
+
+</html>
